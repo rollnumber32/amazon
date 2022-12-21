@@ -1,11 +1,23 @@
 .product {
-    height: 256px;
     padding: 16px;
     background-color: white;
     display: flex;
     flex-direction: column;
 }
 
+.product__title {
+    font-weight: 500;
+}
+
+.product__price {
+    font-weight: 700;
+}
+
 .product__img {
     width: 50%;
+}
+
+.product__btn {
+    background-color: #f0c14b;
+    padding: 2px 4px;
 }
