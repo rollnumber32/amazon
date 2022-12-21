@@ -6,17 +6,11 @@ import Home from "./Home";
 function App() {
     return (
         <div className="app">
+            <Header />
+            <div style={{ marginTop: "64px" }}></div>
             <Router>
                 <Routes>
-                    <Route
-                        path="/"
-                        element={
-                            <>
-                                <Header />
-                                <Home />
-                            </>
-                        }
-                    ></Route>
+                    <Route path="/" element={<Home />}></Route>
                 </Routes>
             </Router>
         </div>

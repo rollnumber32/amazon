@@ -1,0 +1,11 @@
+.product {
+    height: 256px;
+    padding: 16px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.product__img {
+    width: 50%;
+}

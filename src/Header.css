@@ -1,19 +1,19 @@
-.logo{
+.logo {
     height: 2rem;
 }
 
-.search-bar{
+.search-bar {
     flex-grow: 1;
     display: flex;
     height: 32px;
 }
 
-.search-input{
+.search-input {
     flex-grow: 1;
     outline: none;
 }
 
-.search-btn{
+.search-btn {
     background-color: #cd9042;
     display: flex;
     align-items: center;
@@ -21,19 +21,19 @@
     width: 32px;
 }
 
-.small-text{
+.small-text {
     font-size: small;
 }
 
-.large-text{
+.large-text {
     font-weight: 700;
 }
 
-.ml-4{
+.ml-4 {
     margin-left: 32px;
 }
 
-.basket-count{
+.basket-count {
     margin-left: 8px;
     font-weight: 700;
 }
