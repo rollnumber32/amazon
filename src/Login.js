@@ -2,13 +2,15 @@ import "./Login.css";
 import { auth } from "./firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useStateValue } from "./StateProvider";
+import { Link, useNavigate } from "react-router-dom";
 
 function Login() {
     const [{ user }, dispatch] = useStateValue();
+    const navigate = useNavigate();
     var email, password;
 
     if (user.length > 0) {
-        console.log("Successful Login!");
+        navigate("/");
     }
 
     const login = () => {
@@ -62,9 +64,17 @@ function Login() {
                             }}
                         />
                     </div>
-                    <label className="login__section__submit" onClick={login}>
-                        Sign In
-                    </label>
+                    <Link
+                        to=".."
+                        style={{ color: "black", textDecoration: "none" }}
+                    >
+                        <label
+                            className="login__section__submit"
+                            onClick={login}
+                        >
+                            Sign In
+                        </label>
+                    </Link>
                 </form>
                 <br />
                 <p>

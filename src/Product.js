@@ -1,21 +1,25 @@
 import "./Product.css";
 import { StarRate } from "@mui/icons-material";
 import { useStateValue } from "./StateProvider";
+import { useNavigate } from "react-router-dom";
 
 function Product(props) {
-    const [{ basket }, dispatch] = useStateValue();
+    const [{ basket, user }, dispatch] = useStateValue();
+    const navigate = useNavigate();
 
     const addToBasket = () => {
-        dispatch({
-            type: "ADD_TO_BASKET",
-            item: {
-                id: props.id,
-                title: props.title,
-                image: props.image,
-                price: props.price,
-                rating: props.rating,
-            },
-        });
+        if (user.length > 0)
+            dispatch({
+                type: "ADD_TO_BASKET",
+                item: {
+                    id: props.id,
+                    title: props.title,
+                    image: props.image,
+                    price: props.price,
+                    rating: props.rating,
+                },
+            });
+        else navigate("/login");
     };
 
     //STARS

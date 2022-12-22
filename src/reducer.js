@@ -9,6 +9,8 @@ export const reducer = (state, action) => {
             return { ...state, basket: [...state.basket, action.item] };
         case "SIGN_IN_USER":
             return { ...state, user: [action.item] };
+        case "SIGN_OUT_USER":
+            return { ...state, user: [] };
         default:
             return state;
     }
