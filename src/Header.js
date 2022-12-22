@@ -1,8 +1,11 @@
 import "./Header.css";
 import { AppBar, Toolbar } from "@material-ui/core";
 import { Search, ShoppingBasket } from "@material-ui/icons";
+import { useStateValue } from "./StateProvider";
 
 function Header() {
+    const [{ basket }] = useStateValue();
+
     return (
         <header>
             <AppBar style={{ background: "#131921" }}>
@@ -31,7 +34,7 @@ function Header() {
                     <div className="ml-4">
                         <ShoppingBasket />
                     </div>
-                    <div className="basket-count">0</div>
+                    <div className="basket-count">{basket.length}</div>
                 </Toolbar>
             </AppBar>
         </header>

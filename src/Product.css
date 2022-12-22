@@ -20,4 +20,5 @@
 .product__btn {
     background-color: #f0c14b;
     padding: 2px 4px;
+    cursor: pointer;
 }

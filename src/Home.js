@@ -15,44 +15,49 @@ function Home() {
             <div className="home-body">
                 <div className="product-row">
                     <Product
+                        id="1"
                         title="MacBook Air"
                         price="92900.00"
-                        stars="5"
-                        src="./p1.jpg"
+                        rating="5"
+                        image="./p1.jpg"
                         alt="macbookair"
                         route="./ma"
                     />
                     <Product
+                        id="2"
                         title="Logitech Mechanical Keyboard"
                         price="5999.00"
-                        stars="5"
-                        src="./p2.jpg"
+                        rating="5"
+                        image="./p2.jpg"
                         alt="logitechmechanicalkeyboard"
                         route="./lma"
                     />
                 </div>
                 <div className="product-row">
                     <Product
+                        id="3"
                         title="Rubber Plant for Decoration"
                         price="739.00"
-                        stars="3"
-                        src="./p3.jpg"
+                        rating="3"
+                        image="./p3.jpg"
                         alt="macbookair"
                         route="./ma"
                     />
                     <Product
+                        id="4"
                         title="Shure MV7 USB Mic"
                         price="25600.00"
-                        stars="4"
-                        src="./p4.jpg"
+                        rating="4"
+                        image="./p4.jpg"
                         alt="logitechmechanicalkeyboard"
                         route="./lma"
                     />
                     <Product
+                        id="5"
                         title="ARCTIC COSMOS Acoustic Drum Kit"
                         price="20890.00"
-                        stars="4"
-                        src="./p5.jpg"
+                        rating="4"
+                        image="./p5.jpg"
                         alt="logitechmechanicalkeyboard"
                         route="./lma"
                     />
