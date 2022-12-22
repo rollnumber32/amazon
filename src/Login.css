@@ -1,0 +1,45 @@
+.login {
+    height: calc(100vh - 128px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login__section {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.login__section__main {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    border: 1px solid #afafaf;
+    border-radius: 6px;
+}
+
+.login__section__main__input-label {
+    display: block;
+    font-weight: 800;
+    font-size: small;
+    margin-bottom: 4px;
+}
+
+.login__section__main__input {
+    outline: none;
+    border: 2px solid #5f5f5f;
+    width: 256px;
+    height: 24px;
+    padding: 0 2px;
+}
+
+.login__section__submit {
+    display: flex;
+    justify-content: center;
+    background-color: #f0c14b;
+    padding: 4px;
+    cursor: pointer;
+}
