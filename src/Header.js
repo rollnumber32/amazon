@@ -1,6 +1,6 @@
 import "./Header.css";
-import { AppBar, Toolbar } from "@material-ui/core";
-import { Search, ShoppingBasket } from "@material-ui/icons";
+import { AppBar, Toolbar } from "@mui/material";
+import { Search, ShoppingBasket } from "@mui/icons-material";
 import { useStateValue } from "./StateProvider";
 
 function Header() {

@@ -1,5 +1,5 @@
 import "./Product.css";
-import { StarRate } from "@material-ui/icons";
+import { StarRate } from "@mui/icons-material";
 import { useStateValue } from "./StateProvider";
 
 function Product(props) {
