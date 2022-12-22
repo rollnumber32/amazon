@@ -1,0 +1,16 @@
+.checkout {
+    padding: 16px;
+}
+
+.checkout-bar {
+    margin: 8px 0;
+    border: 1px solid #efefef;
+}
+
+.cart-product {
+    display: flex;
+}
+
+.cart-product__image {
+    width: 192px;
+}

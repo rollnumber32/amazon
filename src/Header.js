@@ -18,7 +18,9 @@ function Header() {
         <header>
             <AppBar style={{ background: "#131921" }}>
                 <Toolbar>
-                    <img className="logo" src="./amazon.png" alt="amazon" />
+                    <Link to="/">
+                        <img className="logo" src="./amazon.png" alt="amazon" />
+                    </Link>
                     <form className="search-bar ml-4">
                         <input className="search-input" type="text"></input>
                         <label className="search-btn">
@@ -48,10 +50,21 @@ function Header() {
                                 <div className="small-text">Your</div>
                                 <div className="large-text">Prime</div>
                             </div>
-                            <div className="ml-4">
-                                <ShoppingBasket />
-                            </div>
-                            <div className="basket-count">{basket.length}</div>
+                            <Link
+                                to="/checkout"
+                                style={{
+                                    color: "white",
+                                    textDecoration: "none",
+                                    display: "flex",
+                                }}
+                            >
+                                <div className="ml-4">
+                                    <ShoppingBasket />
+                                </div>
+                                <div className="basket-count">
+                                    {basket.length}
+                                </div>
+                            </Link>
                         </>
                     ) : (
                         <div className="ml-4">

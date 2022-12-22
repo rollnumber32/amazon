@@ -13,7 +13,7 @@ function Home() {
             const data = product.data();
             p.push(
                 <Product
-                    key={data.id}
+                    id={data.id}
                     title={data.title}
                     price={data.price}
                     rating={data.rating}
