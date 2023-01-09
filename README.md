@@ -1,5 +1,5 @@
 # Amazon
- ***Technologies used:*** React, React Router, React Context API, Firebase Auth, Firebase Firestore
+ **Technologies used:** React, React Router, React Context API, Firebase Auth, Firebase Firestore
 
 
 ## Steps to run locally
